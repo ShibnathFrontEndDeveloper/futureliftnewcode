@@ -1,0 +1,9 @@
+Fonts used in this design:
+
+Font: Densia Sans
+Author: Harbor Type
+Url: http://www.fontsquirrel.com/fonts/densia-sans
+
+Font: De Valencia
+Author: Manuel Fernández del Campo García
+Url: https://www.fontsquirrel.com/fonts/de-valencia

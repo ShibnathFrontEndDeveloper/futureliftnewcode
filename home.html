@@ -1,0 +1,608 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="shortcut icon" href="assets/images/favicon.png"type="image/x-icon"/>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Future Lift</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
+    />
+  </head>
+  <body>
+    <div class="main-container">
+      <!-- Header Start -->
+      <div id="header"></div>
+      <!-- Header End -->
+      <div class="container-fluid">
+        <div class="banner container-fluid">
+          <img src="assets/images/hom_page.png" alt="" />
+          <div class="bannerContent col-6">
+            <p>One Stop Solution for your Educational Journey...</p>
+            <a href="login&signInForm.html"
+              ><button onclick="loginform()" class="bannerBtn">
+                SIGN IN
+              </button></a
+            >
+          </div>
+        </div>
+        <!-- Service Section start -->
+        <div class="service load mb-5">
+          <div class="container-fluid col-12 d-flex justify-content-center">
+            <div
+              class="box-container container-fluid d-flex justify-content-evenly row col-12"
+            >
+              <a href="#" class="col-2 cardImgBox">
+                <div class="cardImg" id="cardImg1">
+                  <img
+                    src="assets/images/icons8-exam-96.png"
+                    alt=""
+                    class="img-fluid"
+                  />
+                </div>
+                <p style="color: black">Exam Preparation</p>
+              </a>
+              <a href="careerCounselling.html" class="col-2 cardImgBox">
+                <div class="cardImg" id="cardImg2">
+                  <img
+                    src="assets/images/financial-advisor.png"
+                    alt=""
+                    class="img-fluid"
+                  />
+                </div>
+                <p style="color: black">Career Counselling</p>
+              </a>
+              <a href="#" class="col-2 cardImgBox">
+                <div class="cardImg" id="cardImg3">
+                  <img
+                    src="assets/images/univeristy.png"
+                    alt=""
+                    class="img-fluid"
+                  />
+                </div>
+                <p style="color: black">Find college</p>
+              </a>
+              <a href="#" class="col-2 cardImgBox">
+                <div class="cardImg" id="cardImg4">
+                  <img
+                    src="assets/images/bachelors-degree.png"
+                    alt=""
+                    class="img-fluid"
+                  />
+                </div>
+                <p style="color: black">Scholarship</p>
+              </a>
+              <a href="#" class="col-2 cardImgBox">
+                <div class="cardImg" id="cardImg5">
+                  <img
+                    src="assets/images/icons8-hostel-96.png"
+                    alt=""
+                    class="img-fluid"
+                  />
+                </div>
+                <p style="color: black">PG and Hostels</p>
+              </a>
+            </div>
+          </div>
+        </div>
+        <!-- Service Section End -->
+
+        <!-- Homepage-cards Section start -->
+        <div
+          class="homepage-cards justify-content-center container-fluid row mb-5"
+        >
+          <div class="homepage-card row col-12" data-aos="fade-left">
+            <div class="contentImg col-6">
+              <img
+                src="assets/images/successful-businessman-celebrating-victory_1150-39772.png"
+                alt=""
+                class="img-fluid"
+              />
+            </div>
+            <div class="content col-6">
+              <div class="cardText">
+                <p class="homepageCard-text1">
+                  A successful career is just one step away...
+                </p>
+                <p class="homepageCard-text2">
+                  We are a career development platform for students to acheive a
+                  breakthrough in their career.
+                </p>
+              </div>
+              <button class="cardbtn">Start Now</button>
+            </div>
+          </div>
+          <div class="homepage-card row col-12" data-aos="fade-right">
+            <div class="content col-6">
+              <div class="cardText">
+                <p class="homepageCard-text1">
+                  Your dream college is waiting for you...
+                </p>
+                <p class="homepageCard-text2">
+                  A community point high expectation and high academic
+                  acheivement.
+                </p>
+              </div>
+              <button class="cardbtn">Explore Now</button>
+            </div>
+            <div class="contentImg col-6">
+              <img
+                src="assets/images/students-studying-talking_1262-21513.png"
+                alt=""
+                class="img-fluid"
+              />
+            </div>
+          </div>
+          <div class="homepage-card row col-12" data-aos="fade-left">
+            <div class="contentImg col-6">
+              <img
+                src="assets/images/two-business-partners-handshaking_74855-6685.png"
+                alt=""
+                class="img-fluid"
+              />
+            </div>
+            <div class="content col-6">
+              <div class="cardText">
+                <p class="homepageCard-text1">
+                  Experience something different...
+                </p>
+                <p class="homepageCard-text2">
+                  A foundation value your essential qualities and brighten up
+                  your space.
+                </p>
+              </div>
+              <button class="cardbtn">View More</button>
+            </div>
+          </div>
+          <div class="homepage-card row col-12" data-aos="fade-right">
+            <div class="content col-6">
+              <div class="cardText">
+                <p class="homepageCard-text1">
+                  Live your best Hostel Moments...
+                </p>
+                <p class="homepageCard-text2">
+                  Search your hostel & Co-Living space in URS Room, according to
+                  your requirement.
+                </p>
+              </div>
+              <button class="cardbtn">Explore Now</button>
+            </div>
+            <div class="contentImg col-6 p-5">
+              <img
+                src="assets/images/teen-male-students-group-dormitory-room-boy-characters-discussing-together_33099-134.png"
+                alt=""
+                class="img-fluid"
+              />
+            </div>
+          </div>
+        </div>
+        <!-- Homepage-cards Section End -->
+
+        <!-- Why section start -->
+        <div
+          class="why-section mb-5 container-fluid d-flex align-items-center flex-column mb-5"
+          data-aos="zoom-in-up"
+        >
+          <h1>Why Future Lift?</h1>
+          <div class="whyCards py-2 row col-12">
+            <div class="whyCard col-6 col-lg-3 container-fluid">
+              <div class="whyCard-img">
+                <i class="fa fa-people-roof"></i>
+              </div>
+              <div class="whyCard-content" id="whyContent1">
+                <p class="whyCard-text1">10 Lakhs+</p>
+                <p class="whyCard-text2">
+                  We have reached 10 Lakh+ users in our platform.
+                </p>
+              </div>
+            </div>
+            <div class="whyCard col-6 col-lg-3 container-fluid">
+              <div class="whyCard-img">
+                <i class="fa-regular fa-handshake"></i>
+              </div>
+              <div class="whyCard-content" id="whyContent2">
+                <p class="whyCard-text1">Quality Partner</p>
+                <p class="whyCard-text2">
+                  All over India we have thousands of experience partners who
+                  are working with us.
+                </p>
+              </div>
+            </div>
+            <div class="whyCard col-6 col-lg-3 container-fluid">
+              <div class="whyCard-img">
+                <i class="fa-regular fa-thumbs-up"></i>
+              </div>
+              <div class="whyCard-content" id="whyContent3">
+                <p class="whyCard-text1">One Platform 5 Solution</p>
+                <p class="whyCard-text2">
+                  We are providing 5 different solution for your educational
+                  needs.
+                </p>
+              </div>
+            </div>
+            <div class="whyCard col-6 col-lg-3 container-fluid">
+              <div class="whyCard-img">
+                <i class="fa fa-graduation-cap"></i>
+              </div>
+              <div class="whyCard-content" id="whyContent4">
+                <p class="whyCard-text1">2000+ Institute</p>
+                <p class="whyCard-text2">
+                  We are engaged with 2000+ Institutions across India.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Why section End -->
+
+        <!-- Top collection Start -->
+        <div
+          class="topCollection swiper topCollectionSwiper d-flex align-items-center flex-column mb-5"
+        >
+          <div
+            class="d-flex align-items-center justify-content-center pageHeading w-100"
+          >
+            <h1>Top Collection</h1>
+            <button class="exploreAllbtn">Explore All</button>
+          </div>
+          <div class="topCollection-cards swiper-wrapper">
+            <div class="topCollection-card swiper-slide">
+              <div class="topCard">
+                <div class="topCard-img">
+                  <img
+                    src="assets/images/Exam prepration.png"
+                    alt=""
+                    class="img-fluid"
+                  />
+                </div>
+                <div class="topContent">
+                  <p class="topText1">Sunday Challenge</p>
+                  <p class="topText2">
+                    Try the Weekly Quiz and Win Exciting Prizes!
+                  </p>
+                  <a href="">Read more</a>
+                </div>
+              </div>
+            </div>
+            <div class="topCollection-card swiper-slide">
+              <div class="topCard">
+                <div class="topCard-img">
+                  <img
+                    src="assets/images/Exam prepration.png"
+                    alt=""
+                    class="img-fluid"
+                  />
+                </div>
+                <div class="topContent">
+                  <p class="topText1">Exam Tips</p>
+                  <p class="topText2">
+                    Tips to Become an Effective Reader in Global Race
+                  </p>
+                  <a href="">Read more</a>
+                </div>
+              </div>
+            </div>
+            <div class="topCollection-card swiper-slide">
+              <div class="topCard">
+                <div class="topCard-img">
+                  <img
+                    src="assets/images/Exam prepration.png"
+                    alt=""
+                    class="img-fluid"
+                  />
+                </div>
+                <div class="topContent">
+                  <p class="topText1">Visual Stories</p>
+                  <p class="topText2">
+                    ISRO Missions that put India in Global Space
+                  </p>
+                  <a href="">Read more</a>
+                </div>
+              </div>
+            </div>
+            <div class="topCollection-card swiper-slide">
+              <div class="topCard">
+                <div class="topCard-img">
+                  <img
+                    src="assets/images/Exam prepration.png"
+                    alt=""
+                    class="img-fluid"
+                  />
+                </div>
+                <div class="topContent">
+                  <p class="topText1">Sunday Challenge</p>
+                  <p class="topText2">
+                    Try the Weekly Quiz and Win Exciting Prizes!
+                  </p>
+                  <a href="">Read more</a>
+                </div>
+              </div>
+            </div>
+            <div class="topCollection-card swiper-slide">
+              <div class="topCard">
+                <div class="topCard-img">
+                  <img
+                    src="assets/images/Exam prepration.png"
+                    alt=""
+                    class="img-fluid"
+                  />
+                </div>
+                <div class="topContent">
+                  <p class="topText1">Sunday Challenge</p>
+                  <p class="topText2">
+                    Try the Weekly Quiz and Win Exciting Prizes!
+                  </p>
+                  <a href="">Read more</a>
+                </div>
+              </div>
+            </div>
+            <div class="topCollection-card swiper-slide">
+              <div class="topCard">
+                <div class="topCard-img">
+                  <img
+                    src="assets/images/Exam prepration.png"
+                    alt=""
+                    class="img-fluid"
+                  />
+                </div>
+                <div class="topContent">
+                  <p class="topText1">Sunday Challenge</p>
+                  <p class="topText2">
+                    Try the Weekly Quiz and Win Exciting Prizes!
+                  </p>
+                  <a href="">Read more</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+        </div>
+        <!-- Top collection End -->
+
+        <!-- Education News Start -->
+        <div
+          class="education-news swiper newsSwiper d-flex align-items-center flex-column mb-5"
+          data-aos="zoom-in-left"
+        >
+          <h1 class="pageHeading">Education News</h1>
+          <div class="newsCards swiper-wrapper">
+            <div class="newsCard swiper-slide">
+              <div class="newsImg">
+                <img src="assets/images/reparations.png" alt="" />
+              </div>
+              <div class="newsContent">
+                <h3>Reparations in California</h3>
+                <p>
+                  Explore Why California launched the first-in-the-nation task
+                  force to study reparations for Black people.
+                </p>
+                <button class="newsbtn">Read the Series</button>
+              </div>
+            </div>
+            <div class="newsCard swiper-slide">
+              <div class="newsImg">
+                <img src="assets/images/rebelgirls.jpg" alt="" />
+              </div>
+              <div class="newsContent">
+                <h3>Rebel Girls from Bay Area History</h3>
+                <p>
+                  Celebrating the unsung women who helped shape today's Bay
+                  Area.
+                </p>
+                <button class="newsbtn">Read the Series</button>
+              </div>
+            </div>
+            <div class="newsCard swiper-slide">
+              <div class="newsImg">
+                <img src="assets/images/reparations.png" alt="" />
+              </div>
+              <div class="newsContent">
+                <h3>Reparations in California</h3>
+                <p>
+                  Explore Why California launched the first-in-the-nation task
+                  force to study reparations for Black people.
+                </p>
+                <button class="newsbtn">Read the Series</button>
+              </div>
+            </div>
+            <div class="newsCard swiper-slide">
+              <div class="newsImg">
+                <img src="assets/images/rebelgirls.jpg" alt="" />
+              </div>
+              <div class="newsContent">
+                <h3>Rebel Girls from Bay Area History</h3>
+                <p>
+                  Celebrating the unsung women who helped shape today's Bay
+                  Area.
+                </p>
+                <button class="newsbtn">Read the Series</button>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+        </div>
+        <!-- Education News End -->
+
+        <!-- Refer & Earn Start -->
+        <div
+          class="refer-earn container-fluid py-4 mb-2"
+          data-aos="zoom-in-right"
+        >
+          <a href=""
+            ><img
+              src="assets/images/20220208_171306_0000.png"
+              alt=""
+              class="img-fluid"
+            />
+          </a>
+        </div>
+        <!-- Refer & Earn End -->
+
+        <!-- Subscribe section Start -->
+        <div class="subscribe d-flex align-items-center flex-column mb-5">
+          <h1 class="pageHeading">Subscribe Us</h1>
+          <div class="subscribeForm container-fluid py-4">
+            <form method="post" class="d-flex flex-column px-4">
+              <div class="form-group d-flex row">
+                <div class="p-2 col-12 col-md-4">
+                  <input
+                    type="text"
+                    name="name"
+                    class="form-control"
+                    placeholder="Full Name"
+                    required
+                  />
+                </div>
+                <div class="p-2 col-12 col-md-4">
+                  <input
+                    type="email"
+                    name="email"
+                    class="form-control"
+                    placeholder="Email"
+                    required
+                  />
+                </div>
+                <div class="p-2 col-12 col-md-4">
+                  <input
+                    type="number"
+                    name="mobile"
+                    pattern="^[6789]\d{9,9}$"
+                    class="form-control"
+                    placeholder="Phone"
+                    required
+                  />
+                </div>
+                <div class="p-2 col-12 col-md-6">
+                  <select
+                    name="state"
+                    id="state"
+                    class="form-control"
+                    style="font-size: 2rem"
+                  >
+                    <option value="">Select State</option>
+                    <option value="Andhra Pradesh">Andhra Pradesh</option>
+                    <option value="Andaman and Nicobar Islands">
+                      Andaman and Nicobar Islands
+                    </option>
+                    <option value="Arunachal Pradesh">Arunachal Pradesh</option>
+                    <option value="Assam">Assam</option>
+                    <option value="Bihar">Bihar</option>
+                    <option value="Chandigarh">Chandigarh</option>
+                    <option value="Chhattisgarh">Chhattisgarh</option>
+                    <option value="Dadar and Nagar Haveli">
+                      Dadar and Nagar Haveli
+                    </option>
+                    <option value="Daman and Diu">Daman and Diu</option>
+                    <option value="Delhi">Delhi</option>
+                    <option value="Lakshadweep">Lakshadweep</option>
+                    <option value="Puducherry">Puducherry</option>
+                    <option value="Goa">Goa</option>
+                    <option value="Gujarat">Gujarat</option>
+                    <option value="Haryana">Haryana</option>
+                    <option value="Himachal Pradesh">Himachal Pradesh</option>
+                    <option value="Jammu and Kashmir">Jammu and Kashmir</option>
+                    <option value="Jharkhand">Jharkhand</option>
+                    <option value="Karnataka">Karnataka</option>
+                    <option value="Kerala">Kerala</option>
+                    <option value="Madhya Pradesh">Madhya Pradesh</option>
+                    <option value="Maharashtra">Maharashtra</option>
+                    <option value="Manipur">Manipur</option>
+                    <option value="Meghalaya">Meghalaya</option>
+                    <option value="Mizoram">Mizoram</option>
+                    <option value="Nagaland">Nagaland</option>
+                    <option value="Odisha">Odisha</option>
+                    <option value="Punjab">Punjab</option>
+                    <option value="Rajasthan">Rajasthan</option>
+                    <option value="Sikkim">Sikkim</option>
+                    <option value="Tamil Nadu">Tamil Nadu</option>
+                    <option value="Telangana">Telangana</option>
+                    <option value="Tripura">Tripura</option>
+                    <option value="Uttar Pradesh">Uttar Pradesh</option>
+                    <option value="Uttarakhand">Uttarakhand</option>
+                    <option value="West Bengal">West Bengal</option>
+                  </select>
+                </div>
+                <button
+                  type="submit"
+                  value="submit"
+                  name="submit"
+                  class="align-self-center btns mx-2 py-3"
+                >
+                  GET STARTED
+                </button>
+              </div>
+            </form>
+          </div>
+          <div class="subscribe-email row align-items-center container-fluid">
+            <div
+              class="subscribe-email-content col-12 col-md-6 d-flex justify-content-center flex-column"
+            >
+              <h3>Over 202k Email Subscribers!</h3>
+              <h3>Get tips and resources emailed to you weekly.</h3>
+              <button
+                class="btns"
+                style="margin-top: 4rem; margin-bottom: 1rem"
+              >
+                SUBSCRIBE BY EMAIL
+              </button>
+            </div>
+            <div class="mailImg col-12 col-md-6 d-flex justify-content-center">
+              <img src="assets/images/mailbox.jpg" alt="" />
+            </div>
+          </div>
+        </div>
+        <!-- Subscribe section End -->
+      </div>
+      <div id="footer"></div>
+    </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.6.1.js"
+      integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI="
+      crossorigin="anonymous"
+    ></script>
+    <script src="js/script.js"></script>
+    <script>
+      $(function () {
+        $("#header").load("header.html");
+        $("#footer").load("footer.html");
+      });
+    </script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      $(document).ready(function () {
+        AOS.init({
+          offset: 150,
+          duration: 600,
+        });
+      });
+      function loginform() {
+        localStorage.setItem("display", "login");
+      }
+    </script>
+  </body>
+</html>
