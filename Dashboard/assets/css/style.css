@@ -21672,7 +21672,68 @@ fieldset h1{
   height: 250px;
   overflow-y: auto;
 }
- 
+
+
+/* Price Part */
+.upgrt_price_box .card{
+  background: transparent;
+}
+.price_box .cord_pice{
+  border: 1px solid rgba(0, 0, 0, 0.3) ;
+  background: #fff;
+  height: 850px;
+  
+}
+.pirce_btn_box .btn{
+  background: #0090e7 ;
+}
+.upgrt_price_box .price_body{
+  padding: 0;
+}
+.price_box .cord_pice .card-body{
+  padding: 20px;
+}
+.price_box .cord_pice .rate_box{
+  margin-block: 15px;
+}
+.price_box .cord_pice .rate_box h3{
+  color: #002b45;
+  font-size: 25px;
+  font-weight: 700;
+}
+.price_box .cord_pice .rate_box h3 .bi{
+  font-size: 22px;
+}
+.price_box .price_heading{
+  font-size: 18px;
+  color: #13151b;
+  font-weight: 700;
+  color: #d41459;
+}
+.feature_dtls_box{
+  border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+}
+.feature_dtls_box h3{
+  color: #ff0044;
+  font-size: 13px;
+  
+}
+.feature_dtls_box.disabled h3, .feature_dtls_box.disabled p,.feature_dtls_box.disabled h3 .bi,.feature_dtls_box.disabled h3{
+  color: grey !important;
+}
+.feature_dtls_box .mdi{
+  font-size: 20px;
+  color: #000000;
+}
+.feature_dtls_box h3 .bi{
+  font-size: 16px;
+  margin-right: 5px;
+  color: #000;
+}
+.feature_dtls_box p{
+  color: #16181b;
+  font-size: 13px;
+}
 
 
 
