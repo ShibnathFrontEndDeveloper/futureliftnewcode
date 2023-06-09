@@ -13,7 +13,7 @@ var swiper = new Swiper('.home_swiper', {
   },
   loop:true,
 });
-
+document.querySelector
 var swiper = new Swiper(".topCollectionSwiper", {
   slidesPerView: "auto",
   loop: true,
@@ -137,14 +137,25 @@ var swiper = new Swiper(".careerWhyCards", {
   },
 });
 var swiper = new Swiper(".tabSwiper", {
-  slidesPerView: "auto",
-  centeredSlides: true,
+  slidesPerView: 2,
+  spaceBetween:20,
   slidesPerGroup: 1,
   autoHeight: true,
   navigation: {
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev",
   },
+  breakpoints:{
+    0:{
+      slidesPerView: 1,
+    },
+    1024:{
+      slidesPerView: 2,
+    },
+    1440:{
+      slidesPerView: 3,
+    }
+  }
 });
 
 var swiper = new Swiper(".whyCounsellingSwiper", {
@@ -339,3 +350,34 @@ $(document).ready(function(){
   
       
   });
+
+
+  // Copy text
+
+  function myFunction() {
+    // Get the text field
+    let copyText = document.getElementById("refInput");
+    
+  
+    // Select the text field
+    copyText.select();
+    copyText.setSelectionRange(0, 99999);
+    // For mobile devices
+  
+    // Copy the text inside the text field
+    navigator.clipboard.writeText(copyText.value); 
+  }
+
+  function copyCode(){
+
+    // Get the text field
+    let copyText1 = document.getElementById("refLinkInput");
+
+    // Select the text field
+    copyText1.select();
+    copyText1.setSelectionRange(0, 99999); 
+    // For mobile devices
+
+    // Copy the text inside the text field
+    navigator.clipboard.writeText(copyText1.value);
+  }
