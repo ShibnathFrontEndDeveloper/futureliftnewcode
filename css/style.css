@@ -971,34 +971,30 @@ input::-webkit-calendar-picker-indicator {
   padding: 30px !important;
 }
 .tabCardContent {
-  background: linear-gradient(hsla(191, 76%, 63%, 0.582),#e7d12b46);
   display: flex;
+  align-items: center;
+  justify-content: space-between;
   padding: 1rem;
-  flex-direction: column;
   align-items: center;
   position: relative;
   border-radius: 15px;
   border: 1px solid #7e7e7e32;
 }
 .tabCardContentText {
-  /* display: flex;
-  flex-direction: column;
-  justify-content: space-between; */
-  height: 220px;
-  margin-top: 30px;
+  width: 290px;
+  height: 180px;
+  
 }
 .tabCardContent img {
-  position: absolute;
-  padding: 0.3rem;
-  width: 80px;
-  top: -15%;
-  border-radius: 50%;
+  width: 150px;
+  border-left: 10px solid #dc3545;
 }
 .tabCardContent p {
   padding: 0.5rem;
 }
+
 .tabCardContentText p{
-  font-size: 13px;
+  font-size: 11px;
 }
 .tabCardContentText .parentName{
   font-size: 18px;
@@ -1128,6 +1124,22 @@ input::-webkit-calendar-picker-indicator {
 .fa-caret-down {
   font-size: 3rem;
   color: rgb(224, 72, 103);
+}
+.faqSection .accordion-button:focus{
+  box-shadow: none;
+  background:#dc3545 !important;
+  color: #fff !important;
+}
+.faqSection .accordion-button:not(.collapsed){
+  background: lightgray;
+  color: #000;
+}
+.faqSection .accordion-button{
+  font-weight: 800;
+  background: lightgray;
+}
+.faqSection .accordion-header{
+  font-weight: 700;
 }
 
 /* Counselling Success Styling */
@@ -1456,7 +1468,6 @@ input::-webkit-calendar-picker-indicator {
 .parentName {
   font-size: 1.5rem;
   font-weight: 600;
-  text-align: end;
   margin-bottom: 0;
 }
 .why_box img{

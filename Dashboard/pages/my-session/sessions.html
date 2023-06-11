@@ -8,6 +8,7 @@
     <!-- plugins:css -->
     <link rel="stylesheet" href="../../assets/vendors/mdi/css/materialdesignicons.min.css">
     <link rel="stylesheet" href="../../assets/vendors/css/vendor.bundle.base.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
     <!-- endinject -->
     <!-- Plugin css for this page -->
     <!-- End Plugin css for this page -->
@@ -21,12 +22,59 @@
   <body>
     <div class="popup_box">
       <div class="popup">
-        <button id="close">&times;</button>
-        <h2>This Is The Title</h2>
-        <p>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Expedita distinctio fugiat alias iure qui, commodi minima magni ullam aliquam dignissimos?
-        </p>
-        <a href="../price/price.html">Upgrade Now</a>
+        <div class="card">
+          <div class="card-header">
+            <div class="header_cap_box">
+              <h2>Upgrade to the world's most advanced career guidance platform.</h2>
+              <p>
+                Access interactive activities, schedule one-on-one sessions with experts, and plan your journey to your dream career and college.
+              </p>
+            </div>
+            <button id="close">&times;</button>
+          </div>
+          <div class="card-body">
+            <div class="row g-5">
+              <div class="col-9">
+                <!-- Slider main container -->
+                <div class="swiper upgrade_swiper">
+                  <!-- Additional required wrapper -->
+                  <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide">
+                      <img class="img-fluid" src="/assets/images/dash_1.png" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                      <img class="img-fluid" src="/assets/images/dash_2.png" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                      <img class="img-fluid" src="/assets/images/dash_3.png" alt="">
+                    </div>
+                  </div>
+
+                  <!-- If we need navigation buttons -->
+                  <div class="swiper-button-prev"></div>
+                  <div class="swiper-button-next"></div>
+                </div>
+              </div>
+              <div class="col-3">
+                <ul class="upgrade_list">
+                  <li>Orientation Style</li>
+                  <li>Interest</li>
+                  <li>Personality</li>
+                  <li>Aptitude</li>
+                  <li>Emotional Quotient</li>
+                  <li>Career Matches & Discovery Report</li>
+                  <li>Interactive Activities</li>
+                  <li>1-on-1 Counselling</li>
+                  <li>Action Plan</li>
+                </ul>
+              </div>
+            </div>
+            <div class="text-center mt-5">
+              <a href="../price/price.html">Upgrade Now</a>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
     
@@ -339,7 +387,7 @@
           <footer class="footer">
             <div class="d-sm-flex justify-content-center justify-content-sm-between">
               <span class="text-muted d-block text-center text-sm-left d-sm-inline-block">Copyright © Future Lift</span>
-              <span class="float-none float-sm-right d-block mt-1 mt-sm-0 text-center"> Free <a href="https://www.bootstrapdash.com/bootstrap-admin-template/" target="_blank"></a> Design & Develop by Shibnat</span>
+              <span class="float-none float-sm-right d-block mt-1 mt-sm-0 text-center"><a href="https://www.websolveinfo.com/" target="_blank"> Design & Develop by websolveinfo</a></span>
             </div>
           </footer>
           <!-- partial -->
@@ -363,8 +411,17 @@
     <script src="../../assets/js/settings.js"></script>
     <script src="../../assets/js/todolist.js"></script>
     <script src="../../assets/js/popup.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
 
     <!-- endinject -->
+    <script>
+      const swiper = new Swiper('.upgrade_swiper', {
+        navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+      });
+    </script>
    
 
   </body>

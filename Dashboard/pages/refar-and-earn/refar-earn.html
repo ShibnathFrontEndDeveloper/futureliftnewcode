@@ -390,8 +390,8 @@
 
           <!-- Refar Modal -->
           <div class="modal fade refar_and_earn_box" id="refar_earn_popup" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered" role="document">
-              <div class="modal-content">
+            <div class="modal-dialog modal-dialog-centered" role="document" id="moda_first" id="first_md_box">
+              <div class="modal-content moda_first">
                 <div class="modal-header">
                   <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true">&times;</span>
@@ -406,7 +406,7 @@
                         <p>When your friends buy using your referral code they get INR 500 off and you get an INR 500 Amazon voucher</p>
                       </div>
                     </div>
-                    <div class="row">
+                    <div class="row align-items-center">
                       <div class="col-md-8 all_refar_link_box">
                         <div class="row">
                           <div class="col-md-8 refar_link_box">
@@ -426,9 +426,12 @@
                         </div>
                       </div>
                       <div class="col-md-4">
-                        <div class="link_ref_box">
-                          <a href=""><svg xmlns="http://www.w3.org/2000/svg" width="52" xml:space="preserve">
-                            <path fill-rule="evenodd" clip-rule="evenodd" fill="#3B5998" d="M375.992 128h-39.984c-8.844 0-16 7.156-16 16v32.004c0 8.828 7.156 15.984 16 15.984h45.961c22.656 0 37.406 19.339 33.062 42.515l-8.984 47.918c-3.93 21.008-23.828 37.586-44.547 37.586h-25.492c-8.844 0-16 7.156-16 15.984v136.015c0 22.086-17.922 39.984-40.008 39.984-.305.023-26.422 0-40 0-8.828 0-16.008-7.156-16.008-16 0-8.828 7.18-16 16.008-16h32c8.844 0 16-7.156 16-15.984V328.007c0-22.102 17.906-40.008 40.008-40.008h28.914c8.328 0 16.852-6.648 19.07-15.031l8.484-31.953c2.477-9.309-2.812-17.023-11.852-17.023h-44.617c-22.102 0-40.008-17.902-40.008-40.003V136c0-22.102 17.906-40.003 40.008-40.003h39.984c8.844 0 16-7.16 16-16.004V47.988c0-8.824-7.156-15.984-16-15.984h-63.984c-44.188 0-80.016 35.809-80.016 79.992v71.992c0 22.101-17.898 40.003-39.984 40.003h-23.625c-9.039 0-16.383 7.715-16.383 17.023v31.953c0 8.383 6.75 15.031 15.07 15.031h24.938c22.086 0 39.984 17.906 39.984 40.008v39.983c0 8.844-7.156 16.008-15.984 16.008-8.844 0-16-7.164-16-16.008V335.99c0-8.828-7.172-15.984-16-15.984h-26.5c-20.719 0-37.508-16.578-37.508-37.586v-47.918c0-23.176 18.367-42.515 41.023-42.515h22.984c8.828 0 16-7.156 16-15.984v-72.008C192.008 46.555 238.562 0 296 0h79.992C398.094 0 416 17.902 416 39.988v48.004C416 110.093 398.094 128 375.992 128zM208.008 415.998c8.828 0 15.984 7.156 15.984 16 0 8.828-7.156 16.008-15.984 16.008-8.844 0-16-7.18-16-16.008 0-8.844 7.156-16 16-16z"/></svg>
+                        <div class="link_ref_box ref_social_box">
+                          <p class="social_para">Share on Social Media:</p>
+                          <a href=""><img src="../../../assets/images/tweeter.png" alt="" class="img-fluid" width="20"/>
+                          <a href=""><img src="../../../assets/images/facebook.png" alt="" class="img-fluid" width="20"/>
+                          <a href=""><img src="../../../assets/images/whatsApp.png" alt="" class="img-fluid" width="20"/>
+                          <a href=""><img src="../../../assets/images/linkedin.png" alt="" class="img-fluid" width="20"/>
                           </a>
                         </div>
                       </div>
@@ -436,36 +439,52 @@
                   </div>
                 </div>
                 <div class="modal-footer">
-                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                  <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#refar_earn_popup_next">Save changes</button>
+                  <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#refar_earn_popup_next">Invite by mail</button>
+                </div>
+              </div>
+            </div>
+            <div class="modal fade seec_modal" id="refar_earn_popup_next" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <a href="#moda_first">Back</a>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body ref_mdal_box">
+                    <form action="">
+                      <div class="form-group">
+                        <input type="text" placeholder="mail" class="form-control" required>
+                      </div>
+                      <div class="form-group">
+                        <input type="text" placeholder="mail" class="form-control">
+                      </div>
+                      <div class="form-group">
+                        <input type="text" placeholder="mail" class="form-control">
+                      </div>
+                      <div class="form-group">
+                        <input type="text" name="subject" class="form-control" placeholder="Subject: Find career clarity like I did!" readonly="" disabled>
+                      </div>
+                      <div class="msg_refer_box">
+                        <p>I discovered my perfect career with Mindler. You can, too!</p>
+                        <p>Mindler helps you make sense of the thousands of career options out there to select the perfect one. I think you should give it a go.</p>
+                        <p>Use my referral link below to get Rs. 500 off when you enroll into any Mindler career guidance program or simply use this code: basl6A in the cart page.</p>
+                        <p>You can also try out a free assessment and get a 15-min counselling call before you enroll.</p>
+                      </div>
+                      <button type="submit" class="btn btn-primary">Send</button>
+                    </form>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
-          <div class="modal fade refar_and_earn_box" id="refar_earn_popup_next" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered" role="document">
-              <div class="modal-content">
-                <div class="modal-header">
-                  <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
-                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                  </button>
-                </div>
-                <div class="modal-body">
-                  ...
-                </div>
-                <div class="modal-footer">
-                  
-                  <button type="button" class="btn btn-primary">Save changes</button>
-                </div>
-              </div>
-            </div>
-          </div>
+          
           <!-- partial:../../partials/_footer.html -->
           <footer class="footer">
             <div class="d-sm-flex justify-content-center justify-content-sm-between">
-              <span class="text-muted d-block text-center text-sm-left d-sm-inline-block">Copyright © bootstrapdash.com 2020</span>
-              <span class="float-none float-sm-right d-block mt-1 mt-sm-0 text-center"> Free <a href="https://www.bootstrapdash.com/bootstrap-admin-template/" target="_blank">Bootstrap admin templates</a> from Bootstrapdash.com</span>
+              <span class="text-muted d-block text-center text-sm-left d-sm-inline-block">Copyright © Future Lift</span>
+              <span class="float-none float-sm-right d-block mt-1 mt-sm-0 text-center"><a href="https://www.websolveinfo.com/" target="_blank"> Design & Develop by websolveinfo</a></span>
             </div>
           </footer>
           <!-- partial -->
