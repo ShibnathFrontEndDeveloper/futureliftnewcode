@@ -479,6 +479,14 @@ input::-webkit-calendar-picker-indicator {
   padding: 80px 0;
 
 }
+@media screen and (max-width:560px) {
+  .home_part_heading{
+    margin-bottom: 30px;
+  }
+  .home_part_heading .hone_heading{
+   text-align: center;
+  }
+}
 .home_swiper{
   width: 100%;
   overflow: hidden;
@@ -967,9 +975,9 @@ input::-webkit-calendar-picker-indicator {
 /* .tabCards {
   width: 100% !important;
 } */
-.tab-content{
-  padding: 30px !important;
-}
+/* .tab-content{
+  padding: 15px !important;
+} */
 .tabCardContent {
   display: flex;
   align-items: center;
@@ -983,13 +991,14 @@ input::-webkit-calendar-picker-indicator {
 .tabCardContentText {
   width: 290px;
   height: 180px;
+  overflow: auto;
+  margin-left: 10px;
   
 }
 .tabCardContent img {
   width: 183px;
 }
 .tabCardContent p {
-  padding: 0.5rem;
   position: relative;
 }
 .tabCardContent .tabCrad_img{
@@ -1148,12 +1157,12 @@ input::-webkit-calendar-picker-indicator {
   color: #fff !important;
 }
 .faqSection .accordion-button:not(.collapsed){
-  background: lightgray;
+  /* background: lightgray; */
   color: #000;
 }
 .faqSection .accordion-button{
   font-weight: 800;
-  background: lightgray;
+  background: transparent;
 }
 .faqSection .accordion-header{
   font-weight: 700;
@@ -2342,6 +2351,9 @@ input::-webkit-calendar-picker-indicator {
   .testServiceCardText :nth-child(2) {
     font-size: 0.7rem;
   }
+  .successSection8th-heading{
+    margin-top: 120px;
+  }
 }
 
 @media screen and (max-width: 600px) {
@@ -2481,10 +2493,7 @@ input::-webkit-calendar-picker-indicator {
   .faqSection {
     padding: 0.8rem 2.5rem;
   }
-  .serviceVideoContent :nth-child(1) {
-    font-size: 1rem;
-    font-weight: 600;
-  }
+  
   .serviceVideoContent :nth-child(2) {
     font-size: 0.8rem;
   }
@@ -2554,14 +2563,8 @@ input::-webkit-calendar-picker-indicator {
     font-size: 0.6rem;
     margin-bottom: 2rem;
   }
-  .testInput {
-    font-size: 0.6rem;
-    padding: 0.2rem;
-  }
-  .testbtn {
-    font-size: 0.6rem;
-    padding: 0.2rem;
-  }
+  
+  
   .BenefitsSection {
     padding-top: 2rem !important;
   }
@@ -2614,7 +2617,10 @@ input::-webkit-calendar-picker-indicator {
     font-size: 0.8rem;
   }
   .tabCardContent img {
-    padding: 0.2rem;
+    width: 80px;
+  }
+  .tabCardContent{
+    flex-direction: column;
   }
   .sessionContent p:first-of-type {
     font-size: 1rem;
@@ -2672,18 +2678,15 @@ input::-webkit-calendar-picker-indicator {
   .serviceSection8th {
     padding: 1rem;
   }
-  .serviceVideoContent :nth-child(1) {
-    font-size: 0.8rem;
-    font-weight: 600;
-  }
-  .serviceVideoContent :nth-child(2) {
-    font-size: 0.6rem;
-  }
+  
   .serviceSection8th {
     height: 10rem;
   }
   .serviceVideo {
-    padding: 4rem 1rem;
+    width: 100%;
+  }
+  .serviceVideoContent{
+    width: 100%;
   }
   .pickSectionHeading :nth-child(1) {
     font-size: 1.2rem;
@@ -2715,14 +2718,7 @@ input::-webkit-calendar-picker-indicator {
   .parentName {
     font-size: 1rem;
   }
-  .testInput {
-    font-size: 0.5rem;
-    padding: 0.15rem;
-  }
-  .testbtn {
-    font-size: 0.5rem;
-    padding: 0.15rem;
-  }
+  
   .testServiceSection {
     padding: 1rem 2rem;
   }
@@ -2744,6 +2740,26 @@ input::-webkit-calendar-picker-indicator {
   }
   .BenefitsCardContent :nth-child(2) {
     font-size: 0.7rem;
+  }
+  .careerWhyCardContent{
+    width: 50%;
+  }
+  .whyDetail_box{
+    margin-left: 0;
+    margin-top: -70px;
+  }
+  .why-career-section-1{
+    margin-bottom: 0 !important;
+  }
+  .tabCard{
+    padding: 0;
+  }
+  .testForm{
+    display: flex;
+    justify-content: center;
+  }
+  .faqSection .accordion-button{
+    font-size: 13px;
   }
 }
 @media screen and (max-width: 376px) {
@@ -2997,15 +3013,10 @@ input::-webkit-calendar-picker-indicator {
   .Counselling8th-bannerBtn {
     font-size: 0.5rem;
   }
-  .serviceVideoContent :nth-child(1) {
-    font-size: 0.55rem;
-    font-weight: 600;
-  }
-  .serviceVideoContent :nth-child(2) {
-    font-size: 0.4rem;
-  }
+  
+ 
   .serviceVideo {
-    height: 8rem;
+    height: 14rem;
     padding: 1rem;
   }
   .successSection8th-heading {
@@ -3035,14 +3046,8 @@ input::-webkit-calendar-picker-indicator {
   .counsellingJourneySection {
     padding: 1rem 2rem;
   }
-  .testInput {
-    font-size: 0.4rem;
-    padding: 0.1rem;
-  }
-  .testbtn {
-    font-size: 0.4rem;
-    padding: 0.1rem;
-  }
+  
+  
   .testServiceSection {
     padding: 0.5rem 1rem;
   }
@@ -3057,6 +3062,10 @@ input::-webkit-calendar-picker-indicator {
   }
   .testServiceCardText :nth-child(2) {
     font-size: 0.4rem;
+  }
+  .tabCardContentText{
+    padding: 16px;
+    overflow: visible;
   }
 }
 
