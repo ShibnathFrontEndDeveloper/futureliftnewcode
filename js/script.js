@@ -28,15 +28,9 @@ var swiper = new Swiper(".topCollectionSwiper", {
     prevEl: ".swiper-button-prev",
   },
   breakpoints: {
-    350: {
-      slidesPerView: 1,
-    },
-    376: {
-      slidesPerView: 2,
-    },
-    450: {
-      slidesPerView: 2,
-    },
+   0:{
+    slidesPerView: 1,
+   },
     768: {
       slidesPerView: 3,
     },
@@ -61,20 +55,18 @@ var swiper = new Swiper(".BenefitsSection", {
     prevEl: ".swiper-button-prev",
   },
   breakpoints: {
-    350: {
+   
+    0: {
       slidesPerView: 1,
     },
-    376: {
-      slidesPerView: 2,
-    },
-    450: {
-      slidesPerView: 2,
-    },
     768: {
-      slidesPerView: 3,
+      slidesPerView: 2,
     },
     1024: {
-      slidesPerView: 5,
+      slidesPerView: 3,
+    },
+    1440: {
+      slidesPerView: 4,
     },
   },
 });

@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="../../assets/vendors/mdi/css/materialdesignicons.min.css">
     <link rel="stylesheet" href="../../assets/vendors/css/vendor.bundle.base.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
     <!-- endinject -->
     <!-- Plugin css for this page -->
     <!-- End Plugin css for this page -->
@@ -20,7 +21,7 @@
     <link rel="shortcut icon" href="../../assets/images/favicon.png" />
   </head>
   <body>
-    <div class="popup_box">
+    <!-- <div class="popup_box">
       <div class="popup">
         <div class="card">
           <div class="card-header">
@@ -35,11 +36,11 @@
           <div class="card-body">
             <div class="row g-5">
               <div class="col-9">
-                <!-- Slider main container -->
+                Slider main container
                 <div class="swiper upgrade_swiper">
-                  <!-- Additional required wrapper -->
+                  Additional required wrapper
                   <div class="swiper-wrapper">
-                    <!-- Slides -->
+                    Slides
                     <div class="swiper-slide">
                       <img class="img-fluid" src="/assets/images/dash_1.png" alt="">
                     </div>
@@ -51,7 +52,7 @@
                     </div>
                   </div>
 
-                  <!-- If we need navigation buttons -->
+                  If we need navigation buttons
                   <div class="swiper-button-prev"></div>
                   <div class="swiper-button-next"></div>
                 </div>
@@ -76,7 +77,57 @@
           </div>
         </div>
       </div>
+    </div> -->
+
+
+<div class="modal popup_box" id="sesionPopUp" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content ref_mdal_box">
+      <div class="modal-header">
+        <h1 class="modal-title season_header" id="exampleModalLabel">Upgrade to the world's most advanced career guidance platform.
+        </h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" id="close"></button>
+      </div>
+      <div class="modal-body">
+        <div class="row g-5">
+          <div class="col-lg-9">
+            <div class="swiper upgrade_swiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <img class="img-fluid" src="/assets/images/dash_1.png" alt="">
+                </div>
+                <div class="swiper-slide">
+                  <img class="img-fluid" src="/assets/images/dash_2.png" alt="">
+                </div>
+                <div class="swiper-slide">
+                  <img class="img-fluid" src="/assets/images/dash_3.png" alt="">
+                </div>
+              </div>
+              <div class="swiper-button-prev"></div>
+              <div class="swiper-button-next"></div>
+            </div>
+          </div>
+          <div class="col-lg-3 d-none d-sm-block">
+            <ul class="upgrade_list">
+              <li>Orientation Style</li>
+              <li>Interest</li>
+              <li>Personality</li>
+              <li>Aptitude</li>
+              <li>Emotional Quotient</li>
+              <li>Career Matches & Discovery Report</li>
+              <li>Interactive Activities</li>
+              <li>1-on-1 Counselling</li>
+              <li>Action Plan</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary upgrade_btn"><a href="../price/price.html" class="upgrade_btn">Upgrade Now</a></button>
+      </div>
     </div>
+  </div>
+</div>
     
     <div class="container-scroller">
       <!-- partial:../../partials/_sidebar.html -->
@@ -186,7 +237,7 @@
             </a>
             <div class="collapse" id="auth">
               <ul class="nav flex-column sub-menu">
-                <li class="nav-item"> <a class="nav-link" href="../my-session/sessions.html"> Sessions</a></li>
+                <li class="nav-item"> <a class="nav-link" href="../my-session/sessions.html" data-bs-toggle="modal" data-bs-target="#sesionPopUp"> Sessions</a></li>
               </ul>
             </div>
           </li>
@@ -325,7 +376,6 @@
                       </div>
                       <div class="col-5 col-sm-7 col-xl-8 p-0">
                         <h4 class="mb-1 mb-sm-0">Want even more features?</h4>
-                        <p class="mb-0 font-weight-normal d-none d-sm-block">Check out our Pro version with 5 unique layouts!</p>
                       </div>
                       <div class="col-3 col-sm-2 col-xl-2 pl-0 text-center">
                         <span>
@@ -347,7 +397,7 @@
               </nav>
             </div>
             <div class="row">
-              <div class="col-4 grid-margin stretch-card">
+              <div class="col-md-4 grid-margin stretch-card">
                 <div class="card dash_card">
                   <div class="card-header text-center pt-4 session_card_header">
                     <h4 class="card-title">Session <span>1</span></h4>
@@ -360,7 +410,7 @@
                 </div>
                 </div>
               </div>
-              <div class="col-4 grid-margin stretch-card">
+              <div class="col-md-4 grid-margin stretch-card">
                 <div class="card dash_card">
                   <div class="card-header text-center pt-4 session_card_header">
                     <h4 class="card-title">Session <span>2</span></h4>
@@ -370,7 +420,7 @@
                   </div>
                 </div>
               </div>
-              <div class="col-4 grid-margin stretch-card">
+              <div class="col-md-4 grid-margin stretch-card">
                 <div class="card dash_card">
                   <div class="card-header text-center pt-4 session_card_header">
                     <h4 class="card-title">Session <span>3</span></h4>
@@ -401,6 +451,7 @@
     <!-- container-scroller -->
     <!-- plugins:js -->
     <script src="../../assets/vendors/js/vendor.bundle.base.js"></script>
+    <script src="	https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <!-- endinject -->
     <!-- Plugin js for this page -->
     <!-- End plugin js for this page -->
@@ -421,6 +472,9 @@
         prevEl: '.swiper-button-prev',
       },
       });
+    </script>
+    <script>
+   
     </script>
    
 

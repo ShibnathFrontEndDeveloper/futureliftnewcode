@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="../../assets/vendors/mdi/css/materialdesignicons.min.css">
     <link rel="stylesheet" href="../../assets/vendors/css/vendor.bundle.base.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
     <!-- endinject -->
     <!-- Plugin css for this page -->
     <!-- End Plugin css for this page -->
@@ -265,9 +266,8 @@
                       <div class="col-4 col-sm-3 col-xl-2">
                         <img src="../../assets/images/dashboard/Group126@2x.png" class="gradient-corona-img img-fluid" alt="">
                       </div>
-                      <div class="col-5 col-sm-7 col-xl-8 p-0">
+                      <div class="col-5 col-sm-7 col-xl-8 p-0 upgrd_heading">
                         <h4 class="mb-1 mb-sm-0">Want even more features?</h4>
-                        <p class="mb-0 font-weight-normal d-none d-sm-block">Check out our Pro version with 5 unique layouts!</p>
                       </div>
                       <div class="col-3 col-sm-2 col-xl-2 pl-0 text-center">
                         <span>
@@ -299,7 +299,7 @@
                             <h1 class="refr_heading">Enjoy the convenience</h1>
                             <p>Refer your friends and earn unlimited Amaz on gift vouchers.</p>
                             <div class="refer_btn">
-                              <a href="#refer_popup_box" data-toggle="modal" data-target="#refar_earn_popup" class="refer_btn_link">refer now</a>
+                              <a href="#refPop" data-bs-toggle="modal" data-bs-target="#refPop" class="refer_btn_link">refer now</a>
                             </div>
                           </div>
                           <div class="col-lg-4 col-md-6">
@@ -332,7 +332,7 @@
                           <i class="bi bi-card-checklist"></i>
                           <i class="bi bi-pen-fill pen"></i>
                           <span>1</span>
-                        <span>INVITED</span>
+                        <span>REGISTERED</span>
                         </div>
                       </div>
                       <div class="col-sm-6 col-md-4 col-lg-4 refer_point_store_box">
@@ -342,7 +342,7 @@
                         <div class="d-flex justify-content-center align-items-center">
                           <i class="bi bi-award-fill"></i>
                           <span>1</span>
-                        <span>INVITED</span>
+                        <span>ENROLLED</span>
                         </div>
                       </div>
                       <div class="col-lg-12 how_work">
@@ -389,15 +389,14 @@
           </div>
 
           <!-- Refar Modal -->
-          <div class="modal fade refar_and_earn_box" id="refar_earn_popup" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered" role="document" id="moda_first" id="first_md_box">
-              <div class="modal-content moda_first">
+          
+          <div class="modal fade refmodref" id="refPop" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+            <div class="modal-dialog modal-md">
+              <div class="modal-content ref_mdal_box">
                 <div class="modal-header">
-                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                  </button>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
-                <div class="modal-body">
+                <div class="modal-body ref_mdal_box">
                   <div class="caption_top">
                     <div class="row">
                       <div class="col-lg-12">
@@ -439,46 +438,46 @@
                   </div>
                 </div>
                 <div class="modal-footer">
-                  <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#refar_earn_popup_next">Invite by mail</button>
-                </div>
-              </div>
-            </div>
-            <div class="modal fade seec_modal" id="refar_earn_popup_next" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-              <div class="modal-dialog modal-dialog-centered" role="document">
-                <div class="modal-content">
-                  <div class="modal-header">
-                    <a href="#moda_first">Back</a>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                      <span aria-hidden="true">&times;</span>
-                    </button>
-                  </div>
-                  <div class="modal-body ref_mdal_box">
-                    <form action="">
-                      <div class="form-group">
-                        <input type="text" placeholder="mail" class="form-control" required>
-                      </div>
-                      <div class="form-group">
-                        <input type="text" placeholder="mail" class="form-control">
-                      </div>
-                      <div class="form-group">
-                        <input type="text" placeholder="mail" class="form-control">
-                      </div>
-                      <div class="form-group">
-                        <input type="text" name="subject" class="form-control" placeholder="Subject: Find career clarity like I did!" readonly="" disabled>
-                      </div>
-                      <div class="msg_refer_box">
-                        <p>I discovered my perfect career with Mindler. You can, too!</p>
-                        <p>Mindler helps you make sense of the thousands of career options out there to select the perfect one. I think you should give it a go.</p>
-                        <p>Use my referral link below to get Rs. 500 off when you enroll into any Mindler career guidance program or simply use this code: basl6A in the cart page.</p>
-                        <p>You can also try out a free assessment and get a 15-min counselling call before you enroll.</p>
-                      </div>
-                      <button type="submit" class="btn btn-primary">Send</button>
-                    </form>
-                  </div>
+                  <button class="btn btn-primary" data-bs-target="#refPopref" data-bs-toggle="modal">Send via mail</button>
                 </div>
               </div>
             </div>
           </div>
+          <div class="modal fade refmodref" id="refPopref" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2" tabindex="-1">
+            <div class="modal-dialog modal-md">
+              <div class="modal-content ref_mdal_box">
+                <div class="modal-header">
+                  <button class="btn btn-primary" data-bs-target="#refPop" data-bs-toggle="modal">Back</button>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <form action="">
+                    <div class="form-group">
+                      <input type="text" placeholder="Name" class="form-control" required>
+                    </div>
+                    <div class="form-group">
+                      <input type="email" placeholder="Mail" class="form-control" required>
+                    </div>
+                    <div class="form-group">
+                      <input type="tel" placeholder="Mobile" class="form-control" required>
+                    </div>
+                    <div class="form-group">
+                      <input type="text" name="subject" class="form-control" placeholder="Subject: Find career clarity like I did!" readonly="" disabled>
+                    </div>
+                    <div class="msg_refer_box">
+                      <p>I discovered my perfect career with Mindler. You can, too!</p>
+                      <p>Mindler helps you make sense of the thousands of career options out there to select the perfect one. I think you should give it a go.</p>
+                      <p>Use my referral link below to get Rs. 500 off when you enroll into any Mindler career guidance program or simply use this code: basl6A in the cart page.</p>
+                      <p>You can also try out a free assessment and get a 15-min counselling call before you enroll.</p>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Send</button>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          
           
           <!-- partial:../../partials/_footer.html -->
           <footer class="footer">
@@ -494,6 +493,7 @@
     
     <!-- plugins:js -->
     <script src="../../assets/vendors/js/vendor.bundle.base.js"></script>
+    <script src="	https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <!-- endinject -->
     <!-- Plugin js for this page -->
     <!-- End plugin js for this page -->
