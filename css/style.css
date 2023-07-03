@@ -84,6 +84,15 @@ a {
 }
 
 /* Header styling start */
+/* #header{
+  position: fixed;
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(6px);
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+} */
 .navbar {
   height: 80px;
   background: white;
@@ -126,10 +135,20 @@ a {
 .offcanvas {
   padding: 0;
   max-width: 75%;
+  /* height: 100vh; */
 }
 .offcanvas-body {
   padding: 0;
+  background: #fff;
+  
 }
+/* .side_navbar .navbar-nav{
+padding: 10px 0;
+}
+.side_navbar{
+  overflow: visible;
+} */
+
 .nav-item {
   border-bottom: 2px solid rgb(252, 89, 116);
 }
@@ -155,6 +174,17 @@ a {
 }
 .sidemenu-social-icon a .fab {
   font-size: 2.8rem;
+}
+.login_box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 30px;
+    
+}
+.login_box .logLink{
+    color:#000;
+    font-size:18px;
 }
 .sidemenu-social-icon a .fa-facebook-square {
   color: #4267b2;
@@ -244,9 +274,9 @@ a {
   color: white !important;
   padding: 0.8px;
 }
-.careerPadding {
-  padding-right: 2.5rem;
-}
+/*.careerPadding {*/
+/*  padding-right: 2.5rem;*/
+/*}*/
 .logo img {
   width: 10rem;
   padding-left: 1rem;
@@ -407,10 +437,10 @@ input::-webkit-calendar-picker-indicator {
 
 .footer-area {
   background: #1e2c3d;
-  background: url(../assets/images/footer_bg.jpg);
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: cover;
+  
+  background-position: center center !important;
+  background-repeat: no-repeat !important;
+  background-size: cover !important;
   padding: 150px 0;
   position: relative;
  
@@ -487,13 +517,21 @@ input::-webkit-calendar-picker-indicator {
   font-weight: 100;
   font-family: 'Poppins'sans-serif !important;
 }
-
+.cpyrgt_fisrt{
+    display:flex;
+    justify-content:flex-start;
+}
+.cpyrgt_second{
+    display:flex;
+    justify-content:flex-end;
+}
 #copyright p a {
-  color: #fff;
+  color: #ffc107;
+  font-weight:500;
 }
 
 #copyright p a:hover {
-  color: #137ed9;
+  color: #ffc107;
 }
 /* Footer styling End */
 
@@ -504,6 +542,22 @@ input::-webkit-calendar-picker-indicator {
   background-repeat: no-repeat;
 } */
 
+.toToBottom_btn_box{
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    font-size: 20px;
+    border: none;
+    outline: none;
+    background-color: red;
+    color: white;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 4px;
+    transition:.5s all ease-in-out;
+}
 
 .home_part{
   background: linear-gradient(#9540ad,#192e95);
@@ -762,9 +816,18 @@ input::-webkit-calendar-picker-indicator {
 .book_btn{
   background: #dc3545;
   border: none;
+  padding:5px;
+}
+.book_btn :hover{
+    background: #dc3545 ;
 }
 .book_btn .badge{
-  background: #368e19;
+  background: #fff;
+  color:#adb5bd;
+  box-shadow:1px 3px 6px rgba(0,0,0,0.5);
+}
+.btn:first-child:hover{
+    background:#e1626e;
 }
 .homepage-card .content {
   display: flex;
@@ -889,19 +952,16 @@ backdrop-filter: blur(6px);
   height: auto !important;
 }
 .topCard {
-  background-color: lightgrey;
+  background-color: #f5f5f5;
   border-radius: 5px;
   box-shadow: 0px 5px 15px -12px rgb(184, 2, 184);
   padding: 0.5rem;
-  height: 100%;
 }
 .topCard:hover {
   transform: scale(1.04);
   transition: 0.3s ease-in-out;
 }
 .topCard-img {
-  padding: 1rem;
-  background-color: orange;
   display: flex;
   justify-content: center;
 }
@@ -1101,7 +1161,7 @@ backdrop-filter: blur(6px);
 }
 .sessionBtn {
   border: 0;
-  background-color: rgb(121, 5, 136);
+  background-color: #0d6efd;
   color: white;
   border-radius: 5px;
   padding: 8px 15px;
@@ -1213,7 +1273,7 @@ backdrop-filter: blur(6px);
 
 /* Counselling Success Styling */
 .successSection8th-cards {
-  background-image: url("/assets/images/order\ above\ 799\ get\ free\ plants\ and\ next\ day\ delivery\ in\ delhi\ ncr\ \(4\).png");
+  background-image: url("../assets/images/order_bg.png");
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: 100% 100%;
@@ -1242,6 +1302,10 @@ backdrop-filter: blur(6px);
   background-color: crimson;
   position: relative;
   bottom: 0;
+}
+.successSection8th-cardbtn:hover{
+    color:#fff;
+    text-decoration:none;
 }
 .successCard-heading {
   font-size: 1.5rem;
@@ -1299,7 +1363,47 @@ backdrop-filter: blur(6px);
   font-size: 1.2rem;
   margin-top: 1rem;
 }
+.pickSectionCardbtn:hover{
+    color:#fff;
+}
+.call_box_expert{
+    position:fixed;
+    top:477px;
+    left:30px;
+    width:60px;
+    height:60px;
+    background:#12df22;
+    border-radius:50%;
+    z-index:7;
+}
+.call_box_expert .expert_call_btn{
+    display:block;
+    width:100%;
+    height:100%;
+    color:#fff;
+    text-align:center;
+    line-height:1.8;
+     animation:salsa .5s linear;
+}
+.call_box_expert .expert_call_btn .bi{
+    font-size:35px;
+    color:##063f6b;
+   
+}
 
+@keyframes salsa{
+    0%{
+        transform:translateX(1px);
+    }
+    50%{
+        transform-origin: 0 0;
+transform: translate(-5px, 5px) rotate(-45deg) 
+
+    }
+    100%{
+        transform:translateX(-2px);
+    }
+}
 .pickSectionHeading {
   background-color: crimson;
   height: 30%;
@@ -1383,13 +1487,13 @@ backdrop-filter: blur(6px);
   background-color: green;
   padding: 0.5rem;
 }
-.callExpertSection {
-  background: url("/assets/images/callusBackground.png");
-  background-repeat: no-repeat;
-  background-size: 100% 100%;
-  padding: 1rem 4rem;
-  margin-bottom: 5rem;
-}
+/*.callExpertSection {*/
+/*  background: url("../assets/images/callusBackground.png");*/
+/*  background-repeat: no-repeat;*/
+/*  background-size: 100% 100%;*/
+/*  padding: 1rem 4rem;*/
+/*  margin-bottom: 5rem;*/
+/*}*/
 .callExpertTop {
   display: flex;
   align-items: center;
@@ -1419,7 +1523,7 @@ backdrop-filter: blur(6px);
   display: flex;
   align-items: center;
   width: 100%;
-  margin-top: 4rem;
+  margin-block:35px;
 }
 .callExpertBottomContent {
   text-align: center;
@@ -1485,7 +1589,7 @@ backdrop-filter: blur(6px);
   padding-right: 30px;
 }
 .careerWhyCardContent .imgfuid{
-  width: 40px;
+  width: 64px;
 }
 .whySectionCounselling {
   margin: 4rem 0;
@@ -1850,9 +1954,7 @@ backdrop-filter: blur(6px);
   .counsellingCard-content p:last-of-type {
     font-size: 1rem;
   }
-  .whyCard-career-1 {
-    padding: 0.5rem 3rem;
-  }
+  
   .sessionContent p:first-of-type {
     font-size: 2rem;
   }
@@ -1982,9 +2084,7 @@ backdrop-filter: blur(6px);
   .counsellingCard-content p:last-of-type {
     font-size: 0.7rem;
   }
-  .whyCard-career-1 {
-    padding: 0.5rem 2.8rem;
-  }
+  
   .whyCard-career-1-img {
     top: 2rem;
     font-size: 2.5rem;
@@ -2267,15 +2367,16 @@ backdrop-filter: blur(6px);
   .counsellingCard-content p:last-of-type {
     font-size: 0.6rem;
   }
-  .whyCard-career-1 {
-    padding: 0.5rem 2rem;
-  }
+ 
   .whyCard-career-1-img {
     top: 2rem;
     font-size: 2rem;
   }
   .whyCard-career-1-text1 {
     font-size: 0.95rem;
+  }
+  .whyCard-career-1-content{
+      margin-top:-15px;
   }
   .whyCard-career-1-text2 {
     font-size: 0.75rem;
@@ -2413,9 +2514,7 @@ backdrop-filter: blur(6px);
 }
 
 @media screen and (max-width: 600px) {
-  .pageHeading {
-    margin: 1rem 0;
-  }
+  
   .fa-bars {
     font-size: 1.5rem;
   }
@@ -2494,7 +2593,7 @@ backdrop-filter: blur(6px);
     font-size: 1rem;
   }
   .cardbtn {
-    font-size: 1.2rem;
+    font-size: 13px;
     margin-bottom: 20px;
   }
   .homepageCard-text2{
@@ -2516,15 +2615,14 @@ backdrop-filter: blur(6px);
     font-size: 2rem;
     top: 1.8rem;
   }
-  .whyCard-career-1 {
-    padding: 0.5rem 1.7rem;
-  }
+  
   .whyCard-career-1-img {
     top: 1.3rem;
     font-size: 1.5rem;
   }
   .whyCard-career-1-text1 {
-    font-size: 0.8rem;
+    font-size: 10px;
+    padding:5px;
   }
   .whyCard-career-1-text2 {
     font-size: 0.65rem;
@@ -2559,9 +2657,10 @@ backdrop-filter: blur(6px);
   
   .serviceVideoContent :nth-child(2) {
     font-size: 0.8rem;
+    margin-top: -18px;
   }
   .serviceVideo {
-    padding: 3rem 1rem;
+    padding: 1rem 1rem;
   }
   .callExpertSection8th {
     flex-direction: column;
@@ -2673,12 +2772,12 @@ backdrop-filter: blur(6px);
   .exploreAllbtn {
     font-size: 0.8rem;
   }
-  .tabCardContent img {
-    width: 80px;
-  }
-  .tabCardContent{
-    flex-direction: column;
-  }
+  /*.tabCardContent img {*/
+  /*  width: 80px;*/
+  /*}*/
+  /*.tabCardContent{*/
+  /*  flex-direction: column;*/
+  /*}*/
   .sessionContent p:first-of-type {
     font-size: 1rem;
   }
@@ -2687,6 +2786,7 @@ backdrop-filter: blur(6px);
   }
   .sessionContent ul li {
     font-size: 0.7rem;
+    list-style:none;
   }
   .sessionBtn {
     font-size: 1rem;
@@ -2698,6 +2798,7 @@ backdrop-filter: blur(6px);
   }
   .sessionContent {
     width: 100%;
+    text-align:center;
   }
   .sessionImg {
     width: 100%;
@@ -2715,12 +2816,13 @@ backdrop-filter: blur(6px);
     width: 100%;
   }
   .Counselling8th-bannerContent {
-    padding: 1.5rem;
+    padding: .5rem;
     top: 6rem;
     left: 2rem;
   }
   .Counselling8th-bannerContent :nth-child(1) {
-    font-size: 0.5rem;
+    font-size: 0.8rem;
+    margin-bottom:5px;
   }
   .Counselling8th-bannerContent :nth-child(2) {
     font-size: 0.6rem;
@@ -2807,7 +2909,8 @@ backdrop-filter: blur(6px);
   }
   
   .careerWhyCardContent{
-    width: 50%;
+    width: 100%;
+    text-align:center;
   }
   .whyDetail_box{
     margin-left: 0;
@@ -2815,6 +2918,7 @@ backdrop-filter: blur(6px);
   }
   .why-career-section-1{
     margin-bottom: 0 !important;
+    padding:10px 0;
   }
   .tabCard{
     padding: 0;
@@ -2830,14 +2934,60 @@ backdrop-filter: blur(6px);
     flex-direction: column-reverse;
   }
   .footer-area .footer-logo{
-    width: 170px;
+    width: 135px;
   }
   .footer-area{
     padding: 30px 0;
   }
+  .footer-area .footer-title {
+    font-weight: 600;
+    color: #fff;
+    font-size: 15px;
+}
+.footer-area .footer_div ul li a{
+    font-size:14px;
+}
   .topCard-img img{
-    width: 56%;
+    width: 100%;
   }
+  .whyCard-career-1-content{
+      padding:.5rem 0rem 0rem .5rem;
+      margin-top:-11px;
+  }
+  .reverse_card{
+      flex-direction:column-reverse;
+  }
+  .careerWhyCardContent .imgfuid{
+  width: 80px;
+}
+.book_btn{
+    font-size:10px;
+}
+
+.login_box .logLink {
+    font-size: 16px;
+}
+#copyright p{
+    line-height:2;
+    font-size:11px;
+}
+.login_box{
+    margin-left: 15px;
+}
+.sd_text{
+    text-align:center;
+    font-size:23px;
+    font-weight:600;
+}
+.sd_txt_para{
+    text-align:center;
+    font-size:13px;
+}
+.call_box_expert{
+    top: 230px;
+    left:0;
+}
+
 }
 @media screen and (max-width: 376px) {
   .modal-content {
@@ -2997,9 +3147,9 @@ backdrop-filter: blur(6px);
     top: 1.3rem;
   }
  
-  .whyCard-career-1-content {
-    height: 75%;
-  }
+  /*.whyCard-career-1-content {*/
+  /*  height: 75%;*/
+  /*}*/
   .whyCard-career-1 {
     padding: 0.3rem 0.7rem;
   }
@@ -3069,12 +3219,12 @@ backdrop-filter: blur(6px);
     padding: 0.7rem 2rem;
   }
   .Counselling8th-bannerContent {
-    padding: 1rem;
+    padding: .3rem;
     top: 6rem;
     left: 1rem;
   }
   .Counselling8th-bannerContent :nth-child(1) {
-    font-size: 0.4rem;
+    font-size: 0.6rem;
   }
   .Counselling8th-bannerContent :nth-child(2) {
     font-size: 0.45rem;
@@ -3130,9 +3280,30 @@ backdrop-filter: blur(6px);
   }
   
   .tabCardContentText{
-    padding: 16px;
-    overflow: visible;
+    padding: 5px;
   }
+.tabCardContent{
+    padding:.5rem;
+}
+.login_box .logLink {
+    font-size: 9px;
+}
+.sd_text {
+    font-size:20px;
+}
+}
+
+
+@media screen and (max-width: 330px) {
+    .tabCardContent img {
+    width: 127px;
+}
+.tabCardContentText{
+    height: 144px;
+}
+.sd_text {
+    font-size:18px;
+}
 }
 
 
@@ -3309,7 +3480,7 @@ backdrop-filter: blur(6px);
 .latestPost_box{
   border: 1px solid rgba(0, 0, 0, 0.314);
   overflow: hidden;
-  height: 250px;
+  height: 100%;
 }
 .latestPost_box .lts_post_hding {
   padding: 0 8px;
@@ -3362,4 +3533,293 @@ backdrop-filter: blur(6px);
 .para_blog{
   font-size: 14px;
   font-family:'Times New Roman', Times, serif !important;
+}
+
+
+/*////////////////////////////////////////
+About Futurelift ////////////////////////////////////////
+*/
+
+.about_future_lift{
+  padding: 70px 0;
+  background: url(../assets/images/frrrr_1.webp);
+  background-size: cover !important;
+  background-position: center center !important;
+}
+.about_heading{
+  padding: 0px 35px;
+  font-size: 35px;
+  font-weight: 700;
+  color: #ffffff;
+}
+.heading_box{
+  background: transparent;
+  backdrop-filter: blur(5px);
+  border-radius: 5px;
+}
+
+
+.mission_info_box{
+    height: 270px;
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid rgba(0,0,0,0.2);
+    border-radius: 15px;
+    margin-top: 50px;
+    background: rgba(255, 255, 255, 0.478);
+    backdrop-filter: blur(5px);
+}
+.mission_info_box h1{
+  font-size: 25px;
+  font-weight: 600;
+  background: #fff;
+  width: 50%;
+  margin-top: -36px;
+  padding: 6px;
+  box-shadow: 1px 2px 5px rgba(0,0,0,.5);
+  border-radius: 15px;
+
+}
+.mission_info_box p{
+  height: 173px;
+  overflow: auto;
+  margin-top: 20px;
+}
+.mission_futureLift_row{
+  padding-bottom: 50px;
+}
+.whoWeAre_box_text{
+  padding: 80px 0;
+  background-position: center center !important;
+  background-size: cover !important;
+}
+.whoWeAre_box_text p{
+  font-size: 16px;
+  background: linear-gradient(45deg, #fefefe79, #b0bbfc53);
+  padding: 50px;
+  backdrop-filter: blur(6px);
+  border-radius: 10px;
+  box-shadow: 1px 3px 8px rgba(0,0,0,.2);
+}
+.about_other_text{
+  text-align: center;
+  padding: 15px;
+  background: #ffffffb5;
+  border: 1px solid rgba(0,0,0,0.2);
+  backdrop-filter: blur(6px);
+  box-shadow: 1px 5px 10px rgba(100, 107, 250, 0.314);
+  border-radius: 10px;
+}
+.about_other_text h1{
+  font-size: 20px;
+  font-weight: 600;
+  position: relative;
+}
+.about_other_text h1::after{
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translate(-50%);
+  width: 70%;
+  height: 2px;
+  background: rgb(31, 151, 182);
+}
+.about_other_text p{
+  font-size: 13px;
+  margin-top: 40px;
+  color: rgba(0,0,0,0.6);
+}
+
+.quary_box .flQuery_box{
+  background: linear-gradient(45deg, #ffffff6e, #ffffff4d);
+  padding: 25px;
+  backdrop-filter: blur(6px);
+  border-radius: 15px;
+  border: 1px solid rgba(0,0,0,0.2);
+}
+.quary_box h1{
+  font-size: 22px;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding-bottom: 15px;
+  color: #3f4142;
+  position: relative;
+}
+.quary_box h1::after{
+  content: '';
+  position: absolute;
+   bottom: 0;
+   left: 0;
+   width: 50%;
+   height: 2px;
+   background: linear-gradient(red,blue);
+}
+.img_other_box{
+  display: flex;
+  justify-content: center;
+  margin-block:15px ;
+}
+.other_img_box{
+  width: 50px;
+  height: 50px;
+}
+.query_flForm_box{
+  padding-top: 20px;
+}
+.contact_section{
+  background-position: center center !important;
+  background-repeat: no-repeat !important;
+  background-size: cover !important;
+  padding: 80px 0;
+}
+.specification_futureLift{
+  padding: 80px 0;
+  background-position: center center !important;
+  background-repeat: no-repeat !important;
+  background-size: cover !important;
+}
+.mission_main_box{
+  padding: 80px 0;
+}
+.msg_btn{
+  background: #007bff;
+  color: #fff;
+  border: none;
+  outline: none;
+  padding: 8px 15px;
+  border-radius: 8px;
+}
+.msg_btn:hover{
+  background: #084298 !important;
+  color: #fff;
+  box-shadow: 1px 2px 5px rgba(100, 107, 250, 0.569);
+  border: none;
+  outline: none;
+}
+.round_text_box{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.round_text_box img{
+  animation: moving 5s linear infinite;
+}
+@keyframes moving {
+  0%{
+    transform: rotate(0deg);
+  }
+  
+  100%{
+    transform: rotate(-360deg);
+  }
+  
+}
+.round_text_box .text{
+  position: absolute;
+  top: 55%;
+  left: 50%;
+  transform: translate(-50% , -50%);
+}
+.round_text_box .text p{
+  color: #fff;
+  font-size: 18px;
+  font-weight: 600;
+}
+.about_text_blow{
+  text-align: center;
+  padding: 20px;
+  border-radius: 80px;
+  background: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(6px);
+}
+.about_text_blow p{
+  font-size: 14px;
+}
+
+.frrr{
+  margin-top: 50px;
+}
+
+
+/*/////////////////////////////////////
+policy  /////////////////////////////////////
+*/
+
+.animi_policy{
+  height: 406px;
+}
+.policy_part{
+  background: linear-gradient(45deg, #9C27B0,#3F51B5);
+}
+.policy_heading{
+  margin-bottom: 20px;
+  text-transform: capitalize;
+  font-size: 25px;
+  font-weight: 600;
+}
+.top_head_box h1{
+  color: #fff;
+  text-align: center;
+  margin-bottom: 30px;
+}
+.nav_box {
+  text-align: center;
+  background: rgb(210, 66, 246);
+  margin-top: -20px;
+}
+.navLink_tab{
+  font-size: 13px;
+  padding: 5px;
+  color: #ffffff;
+  border-right: rgba(0,0,0,.2) 1px solid;
+  text-transform: capitalize;
+}
+.navLink_tab:hover{
+  color: #fff;
+}
+
+
+@media screen and (max-width:576px) {
+  .whoWeAre_box_text p{
+    padding: 22px;
+    font-size: 13px;
+  }
+  .navLink_tab{
+    font-size: 10px;
+
+  }
+  .about_future_lift{
+    background: url(../assets/images/frrr_sd.png);
+  }
+  .about_text_blow{
+    padding: 10px 6px;
+    border-radius: 5px;
+    height: 50px;
+    overflow: auto;
+  }
+  .about_text_blow p{
+    font-size: 11px;
+  }
+  .round_text_box img{
+    width: 90px;
+  }
+  .round_text_box .text{
+    top: 62%;
+    transform: translate(-50%,-62%);
+  }
+  .round_text_box .text p{
+    font-size: 12px;
+  }
+  .whoWeAre_box_text,.contact_section,.specification_futureLift{
+    padding: 20px 0;
+  }
+  .mission_main_box{
+    padding: 0;
+  }
+  
 }

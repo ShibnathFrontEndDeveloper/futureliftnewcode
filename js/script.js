@@ -8,9 +8,9 @@ var swiper = new Swiper('.home_swiper', {
   spaceBetween: 100,
   slidesPerView:3,
   spaceBetween:20,
-  autoplay:{
-    delay:5000
-  },
+//   autoplay:{
+//     delay:5000
+//   },
   loop:true,
 });
 document.querySelector
