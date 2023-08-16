@@ -249,3 +249,22 @@
     }
     });
 })(jQuery);
+
+
+const share1 = document.getElementById('share_link_btn1');
+share1.onclick = () =>{
+  const share_box1 = document.querySelector('#shareDisplayBox');
+  share_box1.classList.toggle('share_box_show')
+}
+
+const share2 = document.getElementById('share_link_btn2');
+share2.onclick = () =>{
+  const share_box2 = document.querySelector('#shareDisplayBox1');
+  share_box2.classList.toggle('share_box_show')
+}
+
+const share = document.getElementById('share_link_btn');
+share.onclick = () =>{
+  const share_box = document.querySelector('#shareDisplayBox2');
+  share_box.classList.toggle('share_box_show')
+}
