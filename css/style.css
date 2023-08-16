@@ -3609,6 +3609,26 @@ textarea#comment_text:focus{
   color: #fff;
 }
 
+.like_box_wrap{
+  display: flex;
+  overflow: hidden;
+  justify-content: center;
+  align-items: center;
+  width: 150px;
+  background: #f8f8f8;
+  padding: 8px;
+}
+.like_box_wrap .like_box{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+.like_box_wrap .like_box .bi{
+  color: #fa970c;
+}
+
+
 
 
 /*////////////////////////////////////////
