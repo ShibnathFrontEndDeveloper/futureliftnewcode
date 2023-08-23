@@ -964,6 +964,14 @@ backdrop-filter: blur(6px);
 .topCard-img {
   display: flex;
   justify-content: center;
+  height: 150px;
+  width: 205px;
+  overflow: hidden;
+}
+.topCard-img img{
+  width: 100%;
+  height: 100%;
+  object-fit: fill;
 }
 .topContent a {
   color: rgb(184, 2, 184);
@@ -3343,6 +3351,15 @@ transform: translate(-5px, 5px) rotate(-45deg)
 .first_blog_para p{
   font-size: 16px;
 }
+.first_blog .first_blog_img_box{
+  height: 450px;
+  overflow: hidden;
+}
+.first_blog .first_blog_img_box img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
 .comment_sec h5{
   font-size: 25px;
   color: #979797;
@@ -3391,6 +3408,25 @@ transform: translate(-5px, 5px) rotate(-45deg)
   background-position: center;
   background-repeat: no-repeat;
   padding: 15px;
+}
+.blg_box .populer_blg_img_box{
+  height: 200px;
+  overflow: hidden;
+}
+.blg_box .populer_blg_img_box a{
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.blg_box .populer_blg_img_box a:hover img{
+  transform: scale(1.1);
+}
+.blg_box .populer_blg_img_box a img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transform: scale(1.0);
+  transition: .5s ease-in-out;
 }
 .blog_image_content{
   background: rgba(255, 255, 255, 0.3);
@@ -3531,7 +3567,18 @@ transform: translate(-5px, 5px) rotate(-45deg)
   margin-top: 8px;
 }
 .lts_post_img{
-  height: 150px;overflow: hidden;
+  height: 150px;
+  overflow: hidden;
+}
+.lts_post_img a{
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.lts_post_img a img{
+  width: 100%;
+  height: 100%;
+  object-fit: fill;
 }
 .lts_post_release{
   padding: 0 8px;
